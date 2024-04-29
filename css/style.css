@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Cabolafe;
+  src: url("../assets/Cabolafe.otf");
+}
+
+:root {
+  --blue: #6f8cff;
+  --dark-blue: #001dc0;
+  --darker-blue: #0b0072;
+  --orange: #ffaa42;
+  --dark-orange: #ff9900;
+  --darker-orange: #bb6700;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
+body {
+  background-color: black;
+  min-height: 5000px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  top: -63px;
+  position: relative;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/img_arriere_plan/arriere_header_00000.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Cabolafe;
+  color: var(--white);
+}
+
+header h1 {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  font-size: 5vw;
+  text-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  position: relative;
+  top: 70vh;
+  text-align: center;
+  font-size: 1vh;
+}
+
+.appel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 7%;
+  left: 50%;
+  color: white;
+}
+
+#defil {
+  position: absolute;
+  text-align: center;
+  font-size: 3vw;
+  top: 5%;
+  left: 47%;
+}
+
+.fleche-01,
+.fleche-02,
+.fleche-03 {
+  width: 2vw;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+main {
+  margin: 0;
+}
+/*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/
+
+#chap-1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/img_arriere_plan/chapitre_01_grenier.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16/9;
+}
+
+#chap-1 .jack {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  height: 40%;
+}
+
+.micro {
+  position: absolute;
+  top: 65%;
+  right: 20%;
+  width: 30%;
+  height: 40%;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 2
+----------------------------------------------------------*/
+#chap-2 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_02_foret.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#feuille-1 {
+  position: absolute;
+  left: -10vw;
+  top: 10%;
+  height: 15vw;
+
+}
+/*---------------------------------------------------------- 
+# Chapitre 3
+----------------------------------------------------------*/
+#chap-3 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_03_rome.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#chap-3-2 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_03_rome_2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/
+#chap-4 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_04_antartique.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#chap-4-2 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_04_ville_futuriste.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/
+#chap-5 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_05_perdu_00000.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/
