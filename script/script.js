@@ -1,3 +1,5 @@
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline({ repeat: -1 });
@@ -7,7 +9,31 @@ gsap.to('#feuille-1', {
 })
 
 gsap.to('#feuille-2', {
-    x: "110vw", repeat: -1, duration: 5, rotation: 180
+    x: "150vw", repeat: -1, duration: 5, rotation: 180
+})
+
+gsap.to('#dinosaure', {
+    x: "5vw", repeat: -1, duration: 5,
+})
+
+gsap.to('#grand_pere', {
+    x: "5vw", repeat: -1, duration: 5,
+})
+
+gsap.to('#soldat_rome', {
+    x: "5vw", repeat: -1, duration: 5,
+})
+
+gsap.to('#soldat_future', {
+    x: "-5vw", repeat: -1, duration: 5,
+})
+
+gsap.to('#ours', {
+    x: "-5vw", repeat: -1, duration: 5,
+})
+
+gsap.to('.jack', {
+    x: "5vw", repeat: -1, duration: 5, opacity: 1
 })
 
 timeline.to('.fleche-01', {

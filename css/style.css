@@ -84,6 +84,7 @@ footer {
 main {
   margin: 0;
 }
+
 /*---------------------------------------------------------- 
 # Chapitre 1
 ----------------------------------------------------------*/
@@ -99,6 +100,7 @@ main {
   margin: 0;
   padding: 0;
   aspect-ratio: 16/9;
+  border: 1px red;
 }
 
 #chap-1 .jack {
@@ -106,6 +108,7 @@ main {
   top: 50%;
   left: 20%;
   height: 40%;
+  opacity: 0;
 }
 
 .micro {
@@ -134,8 +137,30 @@ main {
   left: -10vw;
   top: 10%;
   height: 15vw;
-
 }
+
+#feuille-2 {
+  position: absolute;
+  left: -50vw;
+  top: 50%;
+  height: 20vw;
+  z-index: 1;
+}
+
+#arbre {
+  position: absolute;
+  bottom: -10%;
+  left: -30%;
+  height: 70vw;
+}
+
+#dinosaure {
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  height: 50vw;
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 3
 ----------------------------------------------------------*/
@@ -147,6 +172,13 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#soldat_rome {
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  height: 30vw;
 }
 
 #chap-3-2 {
@@ -171,6 +203,13 @@ main {
   background-size: cover;
 }
 
+#ours {
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  height: 50vw;
+}
+
 #chap-4-2 {
   position: relative;
   width: 100vw;
@@ -179,6 +218,13 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#soldat_future {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  height: 50vw;
 }
 /*---------------------------------------------------------- 
 # Chapitre 5
@@ -192,6 +238,85 @@ main {
   background-position: center;
   background-size: cover;
 }
+
+#grand_pere {
+  position: absolute;
+  bottom: -15%;
+  right: 50%;
+  height: 50vw;
+}
 /*---------------------------------------------------------- 
 # Chapitre 6
 ----------------------------------------------------------*/
+
+/*---------------------------------------------------------- 
+# Test
+----------------------------------------------------------*/
+
+/* Pour la première spritesheet */
+body.is-scrolling #spritesheet , body.is-scrolling #spritesheet_02  {
+  animation-play-state: running;
+}
+
+#spritesheet {
+  width: 50%;
+  max-width: 100%; 
+  height: auto; 
+  background-image: url("../img/animation_01_spritesheet.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: playSprite 2s steps(29) infinite;
+  animation-play-state: paused; 
+  margin: 0 auto;
+}
+
+#spritesheet_02 {
+  width: 50%;
+  max-width: 100%; 
+  height: auto; 
+  background-image: url("../img/animation_02_spritesheet.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: playSprite2 2s steps(48) infinite;
+  animation-play-state: paused; 
+  margin: 0 auto;
+}
+
+@keyframes playSprite {
+  0% {
+      background-position-y: 0;
+  }
+  100% {
+      background-position-y: -31378px; 
+  }
+}
+
+@keyframes playSprite2 {
+  0% {
+      background-position-y: 0;
+  }
+  100% {
+      background-position-y: -51936px; 
+  }
+}
+
+ul.technique-gsap{
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li{
+  margin: 5px 0;
+}
