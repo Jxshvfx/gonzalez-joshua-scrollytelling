@@ -101,6 +101,8 @@ main {
   padding: 0;
   aspect-ratio: 16/9;
   border: 1px red;
+  opacity: 0;
+  overflow: hidden;
 }
 
 #chap-1 .jack {
@@ -119,6 +121,52 @@ main {
   height: 40%;
 }
 
+#chap-titre-1 {
+  position: absolute;
+  color: var(--white);
+  right: 25%;
+  top: 15%;
+  font-size: 5vw;
+  font-family: Cabolafe;
+  opacity: 0;
+}
+
+.micro-big {
+  position: absolute;
+  left: -100%;
+  top: -70%;
+  width: 300%;
+  height: 300%;
+  transform: scale(0);
+}
+
+#micro-text-1 {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  width: 20%;
+  height: 20%;
+  opacity: 0;
+}
+
+#micro-text-2 {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  width: 20%;
+  height: 20%;
+  opacity: 0;
+}
+
+#cercle-transition {
+  position: absolute;
+  left: 37%;
+  top: 45%;
+  width: 20%;
+  height: 20%;
+  transform: scale(0);
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 2
 ----------------------------------------------------------*/
@@ -130,6 +178,17 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+
+#cercle-transition-2 {
+  position: absolute;
+  left: 37%;
+  top: 45%;
+  width: 20%;
+  height: 20%;
+  transform: scale(12);
+  z-index: 2;
 }
 
 #feuille-1 {
@@ -159,6 +218,15 @@ main {
   bottom: -10%;
   left: -10%;
   height: 50vw;
+  opacity: 0;
+}
+
+.jack-2 {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  height: 25%;
+  transform: scaleX(-1);
 }
 
 /*---------------------------------------------------------- 
@@ -254,54 +322,55 @@ main {
 ----------------------------------------------------------*/
 
 /* Pour la première spritesheet */
-body.is-scrolling #spritesheet , body.is-scrolling #spritesheet_02  {
+body.is-scrolling #spritesheet,
+body.is-scrolling #spritesheet_02 {
   animation-play-state: running;
 }
 
 #spritesheet {
   width: 50%;
-  max-width: 100%; 
-  height: auto; 
-  background-image: url("../img/animation_01_spritesheet.png"); 
+  max-width: 100%;
+  height: auto;
+  background-image: url("../img/animation_01_spritesheet.png");
   background-repeat: no-repeat;
   background-size: cover;
   animation: playSprite 2s steps(29) infinite;
-  animation-play-state: paused; 
+  animation-play-state: paused;
   margin: 0 auto;
 }
 
 #spritesheet_02 {
   width: 50%;
-  max-width: 100%; 
-  height: auto; 
-  background-image: url("../img/animation_02_spritesheet.png"); 
+  max-width: 100%;
+  height: auto;
+  background-image: url("../img/animation_02_spritesheet.png");
   background-repeat: no-repeat;
   background-size: cover;
   animation: playSprite2 2s steps(48) infinite;
-  animation-play-state: paused; 
+  animation-play-state: paused;
   margin: 0 auto;
 }
 
 @keyframes playSprite {
   0% {
-      background-position-y: 0;
+    background-position-y: 0;
   }
   100% {
-      background-position-y: -31378px; 
+    background-position-y: -31378px;
   }
 }
 
 @keyframes playSprite2 {
   0% {
-      background-position-y: 0;
+    background-position-y: 0;
   }
   100% {
-      background-position-y: -51936px; 
+    background-position-y: -51936px;
   }
 }
 
-ul.technique-gsap{
-  background: rgba(0,0,0,0.3);
+ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 10px;
   font-family: monospace;
@@ -317,6 +386,6 @@ ul.technique-gsap{
   left: 0;
 }
 
-ul.technique-gsap li{
+ul.technique-gsap li {
   margin: 5px 0;
 }
