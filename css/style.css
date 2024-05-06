@@ -57,17 +57,9 @@ header p {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 7%;
+  top: 5%;
   left: 50%;
   color: white;
-}
-
-#defil {
-  position: absolute;
-  text-align: center;
-  font-size: 3vw;
-  top: 5%;
-  left: 47%;
 }
 
 .fleche-01,
@@ -122,6 +114,16 @@ main {
 }
 
 #chap-titre-1 {
+  position: absolute;
+  color: var(--white);
+  right: 25%;
+  top: 15%;
+  font-size: 5vw;
+  font-family: Cabolafe;
+  opacity: 0;
+}
+
+#date-1 {
   position: absolute;
   color: var(--white);
   right: 25%;
@@ -229,6 +231,59 @@ main {
   transform: scaleX(-1);
 }
 
+#chap-titre-2 {
+  position: absolute;
+  color: var(--white);
+  right: 25%;
+  top: 15%;
+  font-size: 5vw;
+  font-family: Cabolafe;
+  opacity: 0;
+}
+
+#date-2 {
+  position: absolute;
+  color: var(--white);
+  right: 25%;
+  top: 15%;
+  font-size: 5vw;
+  font-family: Cabolafe;
+  opacity: 0;
+}
+
+.danger {
+  position: absolute;
+  width: 10vw;
+  transform: rotate(80deg);
+  top: 50%;
+  right: 40%;
+  opacity: 0;
+}
+
+.micro-2 {
+  position: absolute;
+  width: 10vw;
+  bottom: 5%;
+  right: 30%;
+}
+.marche {
+  position: absolute;
+  width: 2vw;
+  bottom: 15%;
+  right: 40%;
+  opacity: 0;
+}
+
+#cercle-transition-3 {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20%;
+  height: 20%;
+  z-index: 3;
+  transform: scale(0);
+}
 /*---------------------------------------------------------- 
 # Chapitre 3
 ----------------------------------------------------------*/
@@ -240,6 +295,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 #soldat_rome {
@@ -249,14 +305,11 @@ main {
   height: 30vw;
 }
 
-#chap-3-2 {
-  position: relative;
+#bg-2 {
+  position: absolute;
   width: 100vw;
-  height: 1080px;
-  background-image: url("../img/img_arriere_plan/chapitre_03_rome_2.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  transform: scale(1.2);
+  opacity: 0;
 }
 /*---------------------------------------------------------- 
 # Chapitre 4
@@ -302,6 +355,16 @@ main {
   width: 100vw;
   height: 1080px;
   background-image: url("../img/img_arriere_plan/chapitre_05_perdu_00000.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#chap-5-2 {
+  position: relative;
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../img/img_arriere_plan/chapitre_06_maison.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
