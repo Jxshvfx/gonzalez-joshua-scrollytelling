@@ -202,6 +202,9 @@ main {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16/9;
 }
 
 #cercle-transition-2 {
@@ -335,6 +338,9 @@ main {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16/9;
 }
 
 #soldat_rome {
@@ -426,6 +432,9 @@ main {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16/9;
 }
 
 #chap-4 #transition-slide-1 {
@@ -452,27 +461,11 @@ main {
   height: 50%;
 }
 
-#chap-4-2 {
-  position: relative;
-  width: 100vw;
-  height: 1080px;
-  background-image: url("../img/img_arriere_plan/chapitre_04_ville_futuriste.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 #soldat_future {
   position: absolute;
   top: 30%;
   right: 0%;
   height: 50%;
-}
-
-#ville-future {
-  position: absolute;
-  transform: scale(1.2);
-  z-index: 1;
 }
 
 #cloud-1 {
@@ -516,6 +509,8 @@ main {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
   aspect-ratio: 16/9;
 }
 
@@ -527,6 +522,8 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0;
+  padding: 0;
   aspect-ratio: 16/9;
 }
 
@@ -605,6 +602,9 @@ main {
   background-size: cover;
   border: 1px red;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16/9;
 }
 
 .dialog-10 {
