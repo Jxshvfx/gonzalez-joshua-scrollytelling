@@ -60,7 +60,6 @@ header p {
   flex-direction: column;
   top: 1%;
   left: 50%;
-  color: white;
 }
 
 .fleche-01,
@@ -71,8 +70,9 @@ header p {
 
 footer {
   text-align: center;
-  color: white;
-  border-radius: 1px var(--blue) ;
+  color: var(--blue);
+  border-radius: 1px var(--blue);
+  background-image: url("../img/img_arriere_plan/arriere_header_00000.jpg");
 }
 
 main {
@@ -364,7 +364,7 @@ main {
   opacity: 0;
   overflow: hidden;
   min-width: 100%;
-  min-height: 100%
+  min-height: 100%;
 }
 
 #chap-titre-3 {
