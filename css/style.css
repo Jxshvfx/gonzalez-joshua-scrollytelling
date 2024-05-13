@@ -58,7 +58,7 @@ header p {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 2%;
+  top: 1%;
   left: 50%;
   color: white;
 }
@@ -72,6 +72,7 @@ header p {
 footer {
   text-align: center;
   color: white;
+  border-radius: 1px var(--blue) ;
 }
 
 main {
@@ -398,10 +399,11 @@ main {
 
 .dialog-5 {
   position: absolute;
-  color: white;
+  color: var(--black);
   top: 15%;
   right: 30%;
   font-size: 1.2em;
+  opacity: 0;
 }
 
 .dialog-6 {
@@ -410,6 +412,7 @@ main {
   bottom: 30%;
   right: 20%;
   font-size: 1.2em;
+  opacity: 0;
 }
 /*---------------------------------------------------------- 
 # Chapitre 4
@@ -445,7 +448,7 @@ main {
 #ours {
   position: absolute;
   bottom: 20%;
-  left: 10%;
+  left: 50%;
   height: 50%;
 }
 
@@ -461,15 +464,45 @@ main {
 
 #soldat_future {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 30%;
+  right: 0%;
   height: 50%;
 }
 
 #ville-future {
   position: absolute;
   transform: scale(1.2);
-  z-index: -1;
+  z-index: 1;
+}
+
+#cloud-1 {
+  position: absolute;
+  height: 20%;
+  top: 0;
+  right: 50%;
+}
+
+#cloud-2 {
+  position: absolute;
+  height: 30%;
+  top: 0;
+  right: 20%;
+}
+
+.jack-4 {
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+  height: 50%;
+  transform: scaleX(-1);
+}
+.dialog-7 {
+  position: absolute;
+  color: black;
+  top: 30%;
+  right: 20%;
+  text-align: center;
+  font-size: 1.2em;
 }
 /*---------------------------------------------------------- 
 # Chapitre 5
@@ -502,6 +535,7 @@ main {
   bottom: 0%;
   right: 50%;
   width: 70%;
+  opacity: 0;
 }
 
 #etoile {
@@ -513,6 +547,49 @@ main {
   top: 0%;
   transform: scale(4);
   transform-origin: 50% 50%;
+}
+
+.dialog-8 {
+  position: absolute;
+  color: var(--dark-blue);
+  top: 65%;
+  right: 20%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.jack-5 {
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  height: 40%;
+  transform: rotate(180deg);
+}
+#chap-titre-5 {
+  position: absolute;
+  color: var(--white);
+  left: 17%;
+  top: 15%;
+  font-size: 5vw;
+  font-family: Cabolafe;
+}
+
+.jack-6 {
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+  height: 70%;
+  transform: scaleX(-1);
+}
+
+.dialog-9 {
+  position: absolute;
+  color: var(--black);
+  top: 15%;
+  right: 10%;
+  text-align: center;
+  font-size: 1em;
+  z-index: 1;
 }
 
 /*---------------------------------------------------------- 
@@ -528,6 +605,24 @@ main {
   background-size: cover;
   border: 1px red;
   overflow: hidden;
+}
+
+.dialog-10 {
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 30%;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.fin {
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 50%;
+  font-size: 2em;
+  opacity: 0;
 }
 /*---------------------------------------------------------- 
 # Test

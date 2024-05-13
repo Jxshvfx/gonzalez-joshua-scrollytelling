@@ -16,23 +16,7 @@ gsap.to("#feuille-2", {
   rotation: 180,
 });
 
-gsap.to("#grand_pere", {
-  x: "5vw",
-  repeat: -1,
-  duration: 5,
-});
 
-gsap.to("#soldat_future", {
-  x: "-5vw",
-  repeat: -1,
-  duration: 5,
-});
-
-gsap.to("#ours", {
-  x: "-5vw",
-  repeat: -1,
-  duration: 5,
-});
 
 timeline
   .to(".fleche-01", {
@@ -73,7 +57,7 @@ let chapter1 = gsap
     scrollTrigger: {
       markers: true,
       scrub: true,
-      end: "+=4800",
+      end: "+=12000",
       pin: true,
       trigger: "#chap-1",
     },
@@ -101,7 +85,7 @@ let chapter2 = gsap
       markers: true,
       scrub: true,
       start: "90% bottom",
-      end: "+=4800",
+      end: "+=12000",
       pin: true,
       trigger: "#chap-2",
     },
@@ -127,7 +111,7 @@ let chapter3 = gsap
     scrollTrigger: {
       markers: true,
       scrub: true,
-      end: "+=4800",
+      end: "+=12000",
       pin: true,
       trigger: "#chap-3",
     },
@@ -138,9 +122,12 @@ let chapter3 = gsap
   .to("#chap-titre-3", { opacity: 0, duration: 10 })
   .to("#date-3", { opacity: 1, duration: 10 })
   .to("#date-3", { opacity: 0, duration: 10 })
+  .to(".dialog-5", { opacity: 1, duration: 10 })
+  .to(".dialog-5", { opacity: 0, duration: 10 })
   .to("#bg-2", { opacity: 1, duration: 15 })
   .to(".jack-3", { opacity: 1, duration: 10 })
   .to("#soldat_rome", { x: "5vw", duration: 5, opacity: 1 })
+  .to(".dialog-6", { opacity: 1, duration: 10 })
   .to("#transition-slide-1", { x: "-250vw", duration: 15 });
 
 //Chapitre 4
@@ -150,15 +137,21 @@ let chapter4 = gsap
     scrollTrigger: {
       markers: true,
       scrub: true,
-      end: "+=3600",
+      end: "+=8000",
       pin: true,
       trigger: "#chap-4",
     },
   })
-  .to("#transition-slide-1", { x: "-550vw", duration: 5 });
-  gsap.to("#ligne", {drawSVG: "0% 100%"})
-
+  .to("#transition-slide-1", { x: "-550vw"})
+  .fromTo("#ligne", {drawSVG: "0% 0%"}, {drawSVG: "0% 100%"})
+  .to("#cercle-transition-2", { scale: 12, duration: 10 });
+  gsap.to("#cloud-1", {x: "-20vw", scrollTrigger: {trigger: "#chap-4", scrub: true, end: "+=8000"} });
+  gsap.to("#cloud-2", {x: "-20vw", scrollTrigger: {trigger: "#chap-4", scrub: true, end: "+=8000"} });
+  gsap.to("#soldat_future", {x: "-25vw", scrollTrigger: {trigger: "#chap-4", scrub: true, end: "+=6000"} });
+  gsap.to(".jack-4", {x: "-25vw", scrollTrigger: {trigger: "#chap-4", scrub: true}, end: "+=6000"});
+  gsap.to("#ours", {x: "-25vw", scrollTrigger: {trigger: "#chap-4", scrub: true}, end: "+=6000"});
 //Chapitre 5
+
 gsap.registerPlugin(MorphSVGPlugin);
 MorphSVGPlugin.convertToPath("circle, polygon");
 gsap.to("#cercle", {
@@ -167,3 +160,46 @@ gsap.to("#cercle", {
   duration: 2,
   //rotation: '360deg'
 });
+
+let chapter5 = gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      scrub: true,
+      end: "+=6000",
+      pin: true,
+      trigger: "#chap-5",
+    },
+  })
+  .to("#cercle-transition-2", { scale: 0, duration: 10 });
+
+  let chapter52 = gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      scrub: true,
+      end: "+=3600",
+      pin: true,
+      trigger: "#chap-5-2",
+    },
+  })
+  .to("#grand_pere", {
+    x: "5vw",
+    duration: 5,
+    opacity: 1
+  });
+
+  let chapter6 = gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      scrub: true,
+      end: "+=6000",
+      pin: true,
+      trigger: "#chap-6",
+    },
+  })
+  .to(".dialog-10", { opacity: 1, duration: 10 })
+  .to(".dialog-10", { opacity: 0, duration: 10 })
+  .to(".fin", { opacity: 1, duration: 10 })
+  .to(".fin", { opacity: 0, duration: 10 });
