@@ -2,12 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeline = gsap.timeline({ repeat: -1 });
 
-gsap.to("#feuille-1", {
-  x: "110vw",
-  repeat: -1,
-  duration: 5,
-  rotation: 180,
-});
+
 
 gsap.to("#feuille-2", {
   x: "150vw",
@@ -79,6 +74,13 @@ let chapter1 = gsap
   .to("#cercle-transition", { scale: 12, duration: 10 });
 
 // Chapitre 2
+gsap.registerPlugin(MotionPathPlugin);
+gsap.to("#feuille-1", {
+  motionPath: "#path-f",
+  repeat: -1,
+  duration: 5,
+  rotation: 180,
+});
 let chapter2 = gsap
   .timeline({
     scrollTrigger: {
